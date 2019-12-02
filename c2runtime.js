@@ -21626,11 +21626,11 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.Text.prototype.acts.SetText,
+	cr.system_object.prototype.cnds.OnLayoutStart,
+	cr.system_object.prototype.acts.SetVar,
 	cr.system_object.prototype.acts.SubVar,
 	cr.system_object.prototype.cnds.CompareVar,
 	cr.plugins_.Text.prototype.acts.SetVisible,
-	cr.system_object.prototype.cnds.OnLayoutStart,
-	cr.system_object.prototype.acts.SetVar,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.acts.SetVisible
 ];};
