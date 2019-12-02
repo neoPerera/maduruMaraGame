@@ -21602,16 +21602,17 @@ cr.behaviors.Platform = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Arr,
 	cr.plugins_.Button,
-	cr.plugins_.Mouse,
 	cr.plugins_.Keyboard,
+	cr.plugins_.Mouse,
 	cr.plugins_.Touch,
 	cr.plugins_.Spritefont2,
-	cr.plugins_.Text,
 	cr.plugins_.Sprite,
+	cr.plugins_.Text,
 	cr.behaviors.Platform,
 	cr.plugins_.Keyboard.prototype.cnds.OnKey,
 	cr.behaviors.Platform.prototype.acts.SetVectorY,
 	cr.behaviors.Platform.prototype.exps.VectorY,
+	cr.plugins_.Touch.prototype.cnds.OnTouchStart,
 	cr.plugins_.Sprite.prototype.cnds.OnCollision,
 	cr.system_object.prototype.acts.GoToLayout,
 	cr.plugins_.Sprite.prototype.cnds.IsOutsideLayout,
@@ -21628,5 +21629,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.system_object.prototype.cnds.CompareVar,
 	cr.system_object.prototype.acts.SetVar,
+	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.acts.SetVisible
 ];};
